@@ -716,7 +716,7 @@ __RUN_DEPEND_BLOCK__
     from shutil import copytree
     tmpdirpy = tempfile.mkdtemp(prefix="python_msgs")
     for pkg in generate_dict:
-        python_lib = '/opt/ros/indigo/lib/python2.7/dist-packages/' + pkg
+        python_lib = '/opt/ros/melodic/lib/python2.7/dist-packages/' + pkg
         copytree(python_lib, tmpdirpy + '/' + pkg)
         # TODO: check if we need to delete .pyc files
 
